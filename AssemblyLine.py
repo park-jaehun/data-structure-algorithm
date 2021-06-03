@@ -24,8 +24,8 @@ class AssemblyLines:
     def startScheduling(self):
         numStation = len(self.timeStation[0])
 
-        costLine1 = self.Scheduling(1, numStation - 1)  + self.timeBelt[0](numStation)
-        costLine2 = self.Scheduling(2, numStation - 1) +  self.timeBelt[1](numStation)
+        costLine1 = self.Scheduling(1, numStation - 1) + self.timeBelt[0][numStation]
+        costLine2 = self.Scheduling(2, numStation - 1) + self.timeBelt[1][numStation]
         if costLine1 > costLine2:
             return costLine2
         else:
