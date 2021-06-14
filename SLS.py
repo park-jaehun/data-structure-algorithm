@@ -51,7 +51,6 @@ class SinglyLinkedList:
         self.size = self.size - 1
         return nodeRemove.getValue()
 
-
     def get(self,idxRetrive):
         nodeReturn = self.nodeHead
         for itr in range(idxRetrive + 1):
@@ -68,18 +67,18 @@ class SinglyLinkedList:
     def getSize(self):
         return self.size
 
-list1 = SinglyLinkedList()
-list1.insertAt("a", 0)
-list1.insertAt("b", 1)
-list1.insertAt("c", 2)
-list1.insertAt("d",3)
-list1.printStatus()
-
-list1.insertAt("e",4)
-list1.printStatus()
-
-list1.removeAt(3)
-list1.printStatus()
+# list1 = SinglyLinkedList()
+# list1.insertAt("a", 0)
+# list1.insertAt("b", 1)
+# list1.insertAt("c", 2)
+# list1.insertAt("d",3)
+# list1.printStatus()
+#
+# list1.insertAt("e",4)
+# list1.printStatus()
+#
+# list1.removeAt(3)
+# list1.printStatus()
 
 
 
